@@ -2,7 +2,7 @@
 
 This source code is part of [Node.js, Express.js, Sequelize.js and PostgreSQL RESTful API](https://www.djamware.com/post/5b56a6cc80aca707dd4f65a9/nodejs-expressjs-sequelizejs-and-postgresql-restful-api) tutorial.
 
-![GitAds]("images/gitads-ads-image-2.png")
+![GitAds](https://s3-ap-southeast-1.amazonaws.com/djamblog/article-230620053538.png)
 
 To run locally:
 
