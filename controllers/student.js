@@ -24,7 +24,7 @@ module.exports = {
 
   getById(req, res) {
     return Student
-      .findById(req.params.id, {
+      .findByPk(req.params.id, {
         include: [{
           model: Classroom,
           as: 'classroom'
@@ -56,7 +56,7 @@ module.exports = {
 
   addCourse(req, res) {
     return Student
-      .findById(req.body.student_id, {
+      .findByPk(req.body.student_id, {
         include: [{
           model: Classroom,
           as: 'classroom'
@@ -71,7 +71,7 @@ module.exports = {
             message: 'Student Not Found',
           });
         }
-        Course.findById(req.body.course_id).then((course) => {
+        Course.findByPk(req.body.course_id).then((course) => {
           if (!course) {
             return res.status(404).send({
               message: 'Course Not Found',
@@ -86,7 +86,7 @@ module.exports = {
 
   update(req, res) {
     return Student
-      .findById(req.params.id, {
+      .findByPk(req.params.id, {
         include: [{
           model: Classroom,
           as: 'classroom'
@@ -103,7 +103,7 @@ module.exports = {
         }
         return student
           .update({
-            student_name: req.body.student_name || classroom.student_name,
+            student_name: req.body.student_name || student.student_name,
           })
           .then(() => res.status(200).send(student))
           .catch((error) => res.status(400).send(error));
@@ -113,7 +113,7 @@ module.exports = {
 
   delete(req, res) {
     return Student
-      .findById(req.params.id)
+      .findByPk(req.params.id)
       .then(student => {
         if (!student) {
           return res.status(400).send({
