@@ -8,4 +8,12 @@ To run locally:
 * Create database with the name same as in config file
 * Run `npm install` or `yarn install`
 * Run `sequelize db:migrate`
+* Run `sequelize db:seed:all` to feed databases via test datas(seeders)
+* Run `sequelize db:seed:undo:all` to remove all test datas
 * Run `nodemon` or `npm start`
+
+## Postman test samples
+
+### Get All Students Test
+
+![Get All Students Test](./misc/student-api-test.PNG)
