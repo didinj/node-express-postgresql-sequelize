@@ -1,11 +1,3 @@
-# Node.js, Express.js, Sequelize.js and PostgreSQL RESTful API
+# Building a RESTful API with Node.js, Express, Sequelize & PostgreSQL (2025 Update)
 
-This source code is part of [Node.js, Express.js, Sequelize.js and PostgreSQL RESTful API](https://www.djamware.com/post/5b56a6cc80aca707dd4f65a9/nodejs-expressjs-sequelizejs-and-postgresql-restful-api) tutorial.
-
-To run locally:
-
-* Make sure you have install and run PostgreSQL server
-* Create database with the name same as in config file
-* Run `npm install` or `yarn install`
-* Run `sequelize db:migrate`
-* Run `nodemon` or `npm start`
+Read the full tutorial [here](https://www.djamware.com/post/5b56a6cc80aca707dd4f65a9/building-a-restful-api-with-nodejs-express-sequelize-postgresql-2025-update).
